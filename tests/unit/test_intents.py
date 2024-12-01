@@ -1,7 +1,7 @@
 import requests
 
 # URL da API de Intents
-API_URL = "http://127.0.0.1:8002/intent"
+API_URL = "https://quintanda-intent-detection.hf.space/intent"
 
 # Frases de teste com suas intenções esperadas
 test_cases = [
