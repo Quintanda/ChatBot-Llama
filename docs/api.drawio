@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="QuLQQzzAlqSp5Rk9_ngd" name="Page-1">
-        <mxGraphModel dx="1061" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1061" dy="476" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -23,7 +23,7 @@
                     <mxGeometry y="70" width="90" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="25" value="" style="group" parent="1" vertex="1" connectable="0">
-                    <mxGeometry x="160" y="260" width="210" height="100" as="geometry"/>
+                    <mxGeometry x="185" y="300" width="210" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="6" value="" style="group" parent="25" vertex="1" connectable="0">
                     <mxGeometry width="60" height="100" as="geometry"/>
@@ -31,7 +31,7 @@
                 <mxCell id="7" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;shadow=1;fillColor=#A88E0A;strokeColor=#000000;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" parent="6" vertex="1">
                     <mxGeometry width="60" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Embbeding&amp;nbsp;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" parent="6" vertex="1">
+                <mxCell id="8" value="Embedding&amp;nbsp;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" parent="6" vertex="1">
                     <mxGeometry y="70" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="19" value="" style="group" parent="25" vertex="1" connectable="0">
@@ -50,11 +50,6 @@
                         <Array as="points">
                             <mxPoint x="120" y="30"/>
                         </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="23" style="edgeStyle=none;html=1;exitX=0;exitY=0;exitDx=60;exitDy=50;exitPerimeter=0;" parent="25" source="7" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="150" y="50" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="28" value="" style="group" vertex="1" connectable="0" parent="1">
