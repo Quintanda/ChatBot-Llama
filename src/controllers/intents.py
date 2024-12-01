@@ -17,19 +17,20 @@ intents = {
     "gratitude": ["Obrigado", "Muito obrigado", "Valeu", "Agradeço pela ajuda", "Você foi muito útil", "Obrigadão", "Agradeço muito", "Fico muito grato", "Gratidão", "Valeu mesmo"],
 }
 
-
-# Requisita o embedding de todos os intents e salva em 'intent_embeddings'
-def get_intent_embeddings():
+# Pré-calcula os embeddings para todas as frases representativas
+def get_all_intent_embeddings():
     embeddings = {}
     for intent, examples in intents.items():
-        # Combina todas as frases representativas em um texto
-        combined_text = " ".join(examples)
-        response = requests.post(EMBEDDINGS_SERVICE_URL, json={"text": combined_text})
-        response.raise_for_status()  # Garantir que não há erro
-        embeddings[intent] = np.array(response.json()["embedding"])
+        embeddings[intent] = []
+        for example in examples:
+            response = requests.post(EMBEDDINGS_SERVICE_URL, json={"text": example})
+            response.raise_for_status()
+            embedding = np.array(response.json()["embedding"])
+            embeddings[intent].append(embedding)  # Armazena o embedding da frase
     return embeddings
 
-intent_embeddings = get_intent_embeddings() # Salva os embeddings
+# Calcula os embeddings ao iniciar a API
+intent_embeddings = get_all_intent_embeddings()
 
 # Modelo de entrada do usuário
 class UserInput(BaseModel):
@@ -37,22 +38,27 @@ class UserInput(BaseModel):
 
 @app.post("/intent")
 def get_intent(input: UserInput):
-    
-    # Recebe o texto do usuário e retorna a intenção mais próxima.
-    
+    """
+    Recebe o texto do usuário e retorna a intenção mais próxima.
+    """
     # Obter o embedding do texto do usuário
     response = requests.post(EMBEDDINGS_SERVICE_URL, json={"text": input.text})
     response.raise_for_status()
     user_embedding = np.array(response.json()["embedding"])
 
-    # Comparar com os embeddings das intenções
+    # Comparar o embedding do usuário com os embeddings de todas as frases
     best_intent = None
     best_score = -1
 
-    for intent, embedding in intent_embeddings.items():
-        score = cosine_similarity([user_embedding], [embedding]).flatten()[0]
-        if score > best_score:
-            best_score = score
-            best_intent = intent
+    for intent, example_embeddings in intent_embeddings.items():
+        for example_embedding in example_embeddings:
+            score = cosine_similarity([user_embedding], [example_embedding]).flatten()[0]
+            if score > best_score:
+                best_score = score
+                best_intent = intent
 
     return {"intent": best_intent, "confidence": best_score}
+
+@app.get("/")
+def home():
+    return {"message": "API de Intents está funcionando!"}
