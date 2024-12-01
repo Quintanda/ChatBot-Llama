@@ -7,35 +7,35 @@ API_URL = "https://quintanda-intent-detection.hf.space/intent"
 test_cases = [
     # Saudações (greeting)
     {"text": "Oi", "expected_intent": "greeting"},
-    {"text": "Olá, tudo bem?", "expected_intent": "greeting"},
-    {"text": "Boa tarde, como você está?", "expected_intent": "greeting"},
-    {"text": "E aí, tudo certo?", "expected_intent": "greeting"},
-    {"text": "Oi, bom dia", "expected_intent": "greeting"},
-    {"text": "Boa noite, tudo tranquilo?", "expected_intent": "greeting"},
+    {"text": "Olá, como vai?", "expected_intent": "greeting"},
+    {"text": "Bom dia, tudo bem?", "expected_intent": "greeting"},
+    {"text": "Boa tarde", "expected_intent": "greeting"},
+    {"text": "Boa noite", "expected_intent": "greeting"},
+    {"text": "E aí?", "expected_intent": "greeting"},
 
     # Despedidas (farewell)
-    {"text": "Tchau, até a próxima", "expected_intent": "farewell"},
-    {"text": "Até mais", "expected_intent": "farewell"},
-    {"text": "Valeu, até logo", "expected_intent": "farewell"},
-    {"text": "Obrigado, tchau", "expected_intent": "farewell"},
-    {"text": "Falamos depois", "expected_intent": "farewell"},
-    {"text": "Vou nessa, até mais", "expected_intent": "farewell"},
+    {"text": "Tchau, até mais", "expected_intent": "farewell"},
+    {"text": "Até logo", "expected_intent": "farewell"},
+    {"text": "Nos falamos depois", "expected_intent": "farewell"},
+    {"text": "Tchau, obrigado!", "expected_intent": "farewell"},
+    {"text": "Vou nessa", "expected_intent": "farewell"},
+    {"text": "Até amanhã", "expected_intent": "farewell"},
 
     # Gratidão (gratitude)
-    {"text": "Muito obrigado pela ajuda", "expected_intent": "gratitude"},
-    {"text": "Agradeço muito", "expected_intent": "gratitude"},
-    {"text": "Você foi muito útil, obrigado", "expected_intent": "gratitude"},
-    {"text": "Valeu mesmo", "expected_intent": "gratitude"},
-    {"text": "Obrigado por tudo", "expected_intent": "gratitude"},
-    {"text": "Gratidão", "expected_intent": "gratitude"},
+    {"text": "Muito obrigado por tudo", "expected_intent": "gratitude"},
+    {"text": "Agradeço a sua ajuda", "expected_intent": "gratitude"},
+    {"text": "Valeu, me ajudou muito", "expected_intent": "gratitude"},
+    {"text": "Obrigado pela atenção", "expected_intent": "gratitude"},
+    {"text": "Fico muito grato", "expected_intent": "gratitude"},
+    {"text": "Valeu mesmo, obrigado!", "expected_intent": "gratitude"},
 
     # Pedido de ajuda (help)
-    {"text": "Preciso de ajuda com meu pedido", "expected_intent": "help"},
-    {"text": "Você pode me ajudar?", "expected_intent": "help"},
-    {"text": "Estou com uma dúvida", "expected_intent": "help"},
-    {"text": "Me explica como funciona?", "expected_intent": "help"},
-    {"text": "Não sei como resolver isso", "expected_intent": "help"},
-    {"text": "Como faço para resolver isso?", "expected_intent": "help"},
+    {"text": "Pode me ajudar com meu pedido?", "expected_intent": "help"},
+    {"text": "Preciso de informações sobre o produto", "expected_intent": "help"},
+    {"text": "Como faço para cancelar?", "expected_intent": "help"},
+    {"text": "Tenho uma dúvida sobre o pagamento", "expected_intent": "help"},
+    {"text": "Me explica como funciona o processo?", "expected_intent": "help"},
+    {"text": "Preciso de ajuda com o envio", "expected_intent": "help"},
 ]
 
 # Função para testar cada caso
