@@ -2,6 +2,11 @@
 git branch
 git checkout main
 
+#Atualizar o Código Local com Alterações do GitHub
+git pull origin main
+
+
+
 #Atualizar código
 git pull origin main
 
@@ -12,7 +17,6 @@ git commit -m "Descrição das alterações realizadas"
 #Enviar as Alterações para o GitHub
 git push origin main
 
-#Atualizar o Código Local com Alterações do GitHub
-git pull origin main
+
 
 
