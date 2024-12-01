@@ -5,16 +5,16 @@
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="6" value="" style="group" vertex="1" connectable="0" parent="1">
-                    <mxGeometry x="220" y="70" width="60" height="100" as="geometry"/>
+                    <mxGeometry x="180" y="70" width="60" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="7" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;shadow=1;fillColor=#A88E0A;strokeColor=#000000;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="6">
                     <mxGeometry width="60" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Embbeding e intents" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="6">
+                <mxCell id="8" value="Embbeding&amp;nbsp;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="6">
                     <mxGeometry y="70" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="9" value="" style="group" vertex="1" connectable="0" parent="1">
-                    <mxGeometry x="340" y="70" width="60" height="100" as="geometry"/>
+                    <mxGeometry x="395" y="70" width="60" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;shadow=1;fillColor=#A88E0A;strokeColor=#000000;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="9">
                     <mxGeometry width="60" height="70" as="geometry"/>
@@ -39,6 +39,15 @@
                 </mxCell>
                 <mxCell id="4" value="Recebe / Envia mensagem" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;container=0;" vertex="1" parent="15">
                     <mxGeometry y="70" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="290" y="70" width="60" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;shadow=1;fillColor=#A88E0A;strokeColor=#000000;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="19">
+                    <mxGeometry width="60" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Intents" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;connectable=1;" vertex="1" parent="19">
+                    <mxGeometry y="70" width="60" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

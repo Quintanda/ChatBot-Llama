@@ -2,10 +2,6 @@
 git branch
 git checkout main
 
-#Atualizar o Código Local com Alterações do GitHub
-git pull origin main
-
-
 
 #Atualizar código
 git pull origin main
