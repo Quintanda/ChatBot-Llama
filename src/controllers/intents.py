@@ -7,7 +7,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 app = FastAPI()
 
 # URL do serviço de embeddings
-EMBEDDINGS_SERVICE_URL = "http://localhost:8000/embedding"
+EMBEDDINGS_SERVICE_URL = "https://quintanda-embedding.hf.space/embedding"
 
 # Estrutura das intenções e exemplos
 intents = {
